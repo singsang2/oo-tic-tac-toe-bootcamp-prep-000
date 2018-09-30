@@ -1,11 +1,6 @@
 class TicTacToe
   def initialize(board = Array.new(9, " "))
     @board = board
-    @current = "X"
-    @index = nil
-    @count = 0
-    @winner = nil
-    @winning_combination = nil
   end
   
   def play
