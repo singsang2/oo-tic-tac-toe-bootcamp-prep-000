@@ -11,7 +11,7 @@ class TicTacToe
         puts "Congratulations #{winner}!"
         break
       elsif draw?
-        puts "Draw"
+        puts "Cat's Game!"
         break
       end
     end
