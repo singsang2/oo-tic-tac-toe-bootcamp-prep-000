@@ -55,7 +55,8 @@ class TicTacToe
   def turn
     puts "Make yo move 1-9: "
     input = gets.strip
-    input_to_index(input)
+    index = input_to_index(input)
+    
     if valid_move?
       move
       turn_count
