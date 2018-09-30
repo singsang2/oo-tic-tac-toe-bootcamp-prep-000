@@ -67,7 +67,7 @@ class TicTacToe
   end
   
   def turn_count
-    @count = @board.count {|token| token =="X" || token == "O"}
+    @board.count {|token| token =="X" || token == "O"}
   end
   
   def current_player
@@ -78,16 +78,14 @@ class TicTacToe
   def won?
     WIN_COMBINATIONS.each do |win_combo|
       if @board[win_combo[0]] == @board[win_combo[1]] && @board[win_combo[1]]==@board[win_combo[2]] && @board[win_combo[2]]!=" "
-        @winning_combination = win_combo
-        #puts "winning combo: #{@winning_combination}"
-        return true
+        win_combo
       end
     end
     return false
   end
   
   def full?
-    @count == 9
+    turn_count == 9
   end
   
   def draw?
