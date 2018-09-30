@@ -44,8 +44,8 @@ class TicTacToe
     @board[@index] = @current
   end
   
-  def position_taken?(index = @index)
-    @board[@index].include?("X") || @board[@index].include?("O")
+  def position_taken?(index)
+    @board[index].include?("X") || @board[index].include?("O")
   end
   
   def valid_move?
