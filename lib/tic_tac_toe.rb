@@ -79,6 +79,7 @@ class TicTacToe
         win_combo
       end
     end
+    false
   end
   
   def full?
