@@ -8,7 +8,7 @@ class TicTacToe
       turn
       if won?
         winner
-        puts "Congratulation #{winner}!"
+        puts "Congratulations #{winner}!"
         break
       elsif draw?
         puts "Draw"
