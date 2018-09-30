@@ -10,10 +10,8 @@ class TicTacToe
     if won?
       winner
       puts "Congratulations #{winner}!"
-      break
     elsif draw?
       puts "Cat's Game!"
-      break
     end
   end
   
